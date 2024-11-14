@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <form id="formulario" action="">
+        <h1>Nome:</h1>
+       <input type="text" readonly id="Nome">
+       <h1>Endereço:</h1>
+       <input type="text" readonly id="casa">
+      
+       
+       <H1>CPF</H1>
+       <input id="cpf" type="text" oninput="CpfValidate()" maxlength="14" readonly>
+       <H1>TELEFONE:</H1>
+       <input type="text" id="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Telefone:" readonly />
+       
+       <H1>SENHA:</H1>
+       <input id="code" type="text" readonly>
+    </form>
+    <p></p>
+
+   <a href="index.html"><button>get bequi</button></a> 
+
+   
+    <script src="java2.js" defer></script>
+</body>
+</html>

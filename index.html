@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+
+    <h1>Exemplo de Modal</h1>
+    <button id="abrir" onclick="abrirFechar()">Abrir</button>
+    <dialog id="modal">
+        <div class="modal-header">
+            <h2>Modal</h2>
+        </div>
+        <div id="modal-body">
+            <form id="formulario" action="pagina_secundaria.html">
+                <h1>Nome:</h1>
+               <input type="text" id="Nome"  >
+               <h1>Endereço:</h1>
+               <input type="text" id="casa" oninput="Salvar()">
+               
+               <H1>CPF</H1>
+               <input id="cpf" type="text" oninput="CpfValidate()" maxlength="14">
+               <H1>TELEFONE:</H1>
+               <input type="text" id="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Telefone:" />
+               
+               <H1>CODIGO:</H1>
+               <input id="code" type="password" oninput="Salvar()">
+            </form>
+           <a href="segunda.html"><input type="submit" value="submit" onclick="mensage()"></a>
+        </div>
+       <a href="segunda.html"><button id="fechar" onclick="abrirFechar()">Fechar</button></a> 
+    </dialog>
+
+    
+
+
+
+    <script src="java.js" defer></script>
+</body>
+</html>
