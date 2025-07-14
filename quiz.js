@@ -1,170 +1,170 @@
-// Quiz Questions - 32 questions across various topics
+// Personality Quiz Questions - 32 questions about self-knowledge and personality traits
 const quizQuestions = [
     {
-        question: "What is the capital of France?",
-        options: ["London", "Berlin", "Paris", "Madrid"],
-        correct: 2
+        question: "I enjoy being the center of attention in social gatherings.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Venus", "Mars", "Jupiter", "Saturn"],
-        correct: 1
+        question: "I prefer to plan things well in advance rather than be spontaneous.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the largest ocean on Earth?",
-        options: ["Atlantic", "Indian", "Arctic", "Pacific"],
-        correct: 3
+        question: "I find it easy to empathize with other people's emotions.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Who painted the Mona Lisa?",
-        options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
-        correct: 1
+        question: "I often worry about things that might go wrong in the future.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the smallest unit of matter?",
-        options: ["Molecule", "Atom", "Electron", "Proton"],
-        correct: 1
+        question: "I am comfortable taking risks when the potential reward is high.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "In what year did World War II end?",
-        options: ["1944", "1945", "1946", "1947"],
-        correct: 1
+        question: "I prefer working alone rather than in a team.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the chemical symbol for gold?",
-        options: ["Go", "Gd", "Au", "Ag"],
-        correct: 2
+        question: "I am very organized and like to keep things tidy.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which continent is the largest by land area?",
-        options: ["Africa", "Asia", "North America", "Europe"],
-        correct: 1
+        question: "I often think about philosophical and abstract concepts.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the hardest natural substance on Earth?",
-        options: ["Steel", "Diamond", "Quartz", "Iron"],
-        correct: 1
+        question: "I feel energized after spending time with a large group of people.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Who wrote 'Romeo and Juliet'?",
-        options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-        correct: 1
+        question: "I tend to be very critical of my own performance.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the largest mammal in the world?",
-        options: ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        correct: 1
+        question: "I enjoy trying new foods and experiences.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which gas makes up most of Earth's atmosphere?",
-        options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        correct: 2
+        question: "I find it difficult to say 'no' when people ask for help.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the currency of Japan?",
-        options: ["Yuan", "Won", "Yen", "Rupee"],
-        correct: 2
+        question: "I prefer to make decisions based on logic rather than emotions.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "How many continents are there?",
-        options: ["5", "6", "7", "8"],
-        correct: 2
+        question: "I often start projects but have trouble finishing them.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the fastest land animal?",
-        options: ["Lion", "Cheetah", "Leopard", "Tiger"],
-        correct: 1
+        question: "I am comfortable expressing my opinions even when others disagree.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which organ in the human body produces insulin?",
-        options: ["Liver", "Kidney", "Pancreas", "Heart"],
-        correct: 2
+        question: "I need quiet time alone to recharge after social interactions.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the tallest mountain in the world?",
-        options: ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
-        correct: 1
+        question: "I am very detail-oriented and notice small things others might miss.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which element has the chemical symbol 'O'?",
-        options: ["Osmium", "Oxygen", "Ozone", "Opium"],
-        correct: 1
+        question: "I often put others' needs before my own.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "In which year was the first iPhone released?",
-        options: ["2006", "2007", "2008", "2009"],
-        correct: 1
+        question: "I enjoy competitive situations and trying to win.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the longest river in the world?",
-        options: ["Amazon", "Nile", "Mississippi", "Yangtze"],
-        correct: 1
+        question: "I find it easy to adapt when plans change unexpectedly.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "How many bones are there in an adult human body?",
-        options: ["196", "206", "216", "226"],
-        correct: 1
+        question: "I often think about past mistakes and how I could have done better.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which country gifted the Statue of Liberty to the United States?",
-        options: ["Britain", "Spain", "France", "Italy"],
-        correct: 2
+        question: "I enjoy learning new skills and knowledge regularly.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the main ingredient in guacamole?",
-        options: ["Tomato", "Avocado", "Pepper", "Onion"],
-        correct: 1
+        question: "I tend to be optimistic about future outcomes.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which planet is closest to the Sun?",
-        options: ["Venus", "Earth", "Mercury", "Mars"],
-        correct: 2
+        question: "I prefer to have a few close friends rather than many acquaintances.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What does 'WWW' stand for?",
-        options: ["World Wide Web", "World War Won", "World Wrestling Warriors", "Wide World Web"],
-        correct: 0
+        question: "I am comfortable being a leader and making important decisions.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which blood type is known as the universal donor?",
-        options: ["A", "B", "AB", "O"],
-        correct: 3
+        question: "I often get lost in my thoughts and daydreams.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the capital of Australia?",
-        options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-        correct: 2
+        question: "I find it important to maintain harmony in my relationships.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "How many sides does a hexagon have?",
-        options: ["5", "6", "7", "8"],
-        correct: 1
+        question: "I enjoy discussing ideas and theories more than practical matters.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which scientist developed the theory of relativity?",
-        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
-        correct: 1
+        question: "I am usually the first to try new technology or trends.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the largest country in the world by land area?",
-        options: ["Canada", "China", "United States", "Russia"],
-        correct: 3
+        question: "I feel stressed when my environment is disorganized or messy.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which vitamin is produced when skin is exposed to sunlight?",
-        options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        correct: 3
+        question: "I often seek approval and validation from others.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the smallest country in the world?",
-        options: ["Monaco", "Nauru", "Vatican City", "San Marino"],
-        correct: 2
+        question: "I prefer to take time to think things through before making decisions.",
+        options: ["I completely agree", "I agree", "I partially agree", "I disagree", "I completely disagree"],
+        points: [5, 4, 3, 2, 1]
     }
 ];
 
 // Quiz state
 let currentQuestion = 0;
-let score = 0;
+let totalPoints = 0;
 let userAnswers = [];
 let selectedAnswer = null;
 
@@ -185,7 +185,7 @@ const successMessage = document.getElementById('success-message');
 // Initialize quiz
 function initializeQuiz() {
     currentQuestion = 0;
-    score = 0;
+    totalPoints = 0;
     userAnswers = [];
     selectedAnswer = null;
     showQuestion();
@@ -208,7 +208,7 @@ function showQuestion() {
     });
     
     nextBtn.disabled = true;
-    nextBtn.textContent = currentQuestion === quizQuestions.length - 1 ? 'Finish Quiz' : 'Next Question';
+    nextBtn.textContent = currentQuestion === quizQuestions.length - 1 ? 'Finish Assessment' : 'Next Question';
 }
 
 // Handle answer selection
@@ -228,13 +228,18 @@ function selectAnswer(answerIndex, buttonElement) {
 function nextQuestion() {
     if (selectedAnswer === null) return;
     
-    // Store answer
-    userAnswers.push(selectedAnswer);
+    // Store answer and points
+    const question = quizQuestions[currentQuestion];
+    const pointsEarned = question.points[selectedAnswer];
     
-    // Check if answer is correct
-    if (selectedAnswer === quizQuestions[currentQuestion].correct) {
-        score++;
-    }
+    userAnswers.push({
+        questionIndex: currentQuestion,
+        selectedOption: selectedAnswer,
+        selectedText: question.options[selectedAnswer],
+        pointsEarned: pointsEarned
+    });
+    
+    totalPoints += pointsEarned;
     
     // Move to next question or finish
     currentQuestion++;
@@ -260,25 +265,27 @@ function finishQuiz() {
     quizContainer.classList.add('hidden');
     resultsContainer.classList.remove('hidden');
     
-    finalScore.textContent = score;
+    const maxPossiblePoints = quizQuestions.length * 5; // 32 questions × 5 points max
+    const averageScore = (totalPoints / maxPossiblePoints * 100).toFixed(1);
     
-    // Generate score message
-    const percentage = (score / quizQuestions.length) * 100;
+    finalScore.textContent = totalPoints;
+    
+    // Generate personality message based on total points
     let message = '';
     
-    if (percentage >= 90) {
-        message = "🎉 Excellent! You're a quiz master!";
-    } else if (percentage >= 80) {
-        message = "👏 Great job! Very impressive score!";
-    } else if (percentage >= 70) {
-        message = "👍 Good work! Solid performance!";
-    } else if (percentage >= 60) {
-        message = "📚 Not bad! Room for improvement.";
-    } else {
-        message = "💪 Keep learning! Practice makes perfect.";
+    if (totalPoints >= 144) { // 90% or higher (144-160 points)
+        message = "� Highly Self-Aware: You demonstrate exceptional self-knowledge and confidence in your responses.";
+    } else if (totalPoints >= 128) { // 80-89% (128-143 points)
+        message = "✨ Well-Balanced: You show good self-awareness with a balanced perspective on your traits.";
+    } else if (totalPoints >= 112) { // 70-79% (112-127 points)
+        message = "🎯 Moderate Self-Reflection: You have decent self-knowledge with room for deeper introspection.";
+    } else if (totalPoints >= 96) { // 60-69% (96-111 points)
+        message = "� Developing Awareness: Your responses suggest you're still exploring your personality traits.";
+    } else { // Below 60% (32-95 points)
+        message = "🌱 Self-Discovery Journey: This assessment suggests there's much to explore about yourself.";
     }
     
-    scoreMessage.textContent = message;
+    scoreMessage.innerHTML = `${message}<br><small>You scored ${averageScore}% (${totalPoints} out of ${maxPossiblePoints} possible points)</small>`;
 }
 
 // Handle form submission
@@ -297,19 +304,18 @@ resultsForm.addEventListener('submit', async (e) => {
     // Prepare detailed results
     const detailedResults = quizQuestions.map((question, index) => {
         const userAnswer = userAnswers[index];
-        const correct = question.correct;
-        const isCorrect = userAnswer === correct;
         
         return {
             questionNumber: index + 1,
             question: question.question,
-            userAnswer: question.options[userAnswer],
-            correctAnswer: question.options[correct],
-            isCorrect: isCorrect
+            selectedAnswer: userAnswer.selectedText,
+            pointsEarned: userAnswer.pointsEarned,
+            maxPoints: 5
         };
     });
     
-    const percentage = Math.round((score / quizQuestions.length) * 100);
+    const maxPossiblePoints = quizQuestions.length * 5;
+    const percentage = ((totalPoints / maxPossiblePoints) * 100).toFixed(1);
     
     try {
         const response = await fetch('/submit-results', {
@@ -321,10 +327,12 @@ resultsForm.addEventListener('submit', async (e) => {
                 name: name,
                 email: email,
                 comments: comments,
-                score: score,
+                totalPoints: totalPoints,
+                maxPossiblePoints: maxPossiblePoints,
                 totalQuestions: quizQuestions.length,
                 percentage: percentage,
-                detailedResults: detailedResults
+                detailedResults: detailedResults,
+                assessmentType: 'personality'
             })
         });
         
