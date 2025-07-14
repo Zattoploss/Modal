@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Test Your Knowledge</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Knowledge Quiz</h1>
+            <p>Test your knowledge with 32 questions across various topics!</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <span class="progress-text" id="progress-text">Question 1 of 32</span>
+            </div>
+
+            <div class="question-container" id="question-container">
+                <h2 id="question-text"></h2>
+                <div class="options" id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                <button id="next-btn" class="btn-primary" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container hidden">
+            <div class="results-card">
+                <h2>Quiz Complete!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/ 32</span>
+                    </div>
+                </div>
+                <p id="score-message"></p>
+                
+                <form id="results-form" class="results-form">
+                    <h3>Submit Your Results</h3>
+                    <div class="form-group">
+                        <label for="user-name">Full Name:</label>
+                        <input type="text" id="user-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email Address:</label>
+                        <input type="email" id="user-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-comments">Comments (Optional):</label>
+                        <textarea id="user-comments" name="comments" rows="3" placeholder="Any comments about the quiz?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Results</button>
+                    <button type="button" class="btn-secondary" onclick="restartQuiz()">Take Quiz Again</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Submitting your results...</p>
+        </div>
+
+        <div id="success-message" class="success-message hidden">
+            <div class="success-card">
+                <h2>✅ Success!</h2>
+                <p>Your results have been submitted successfully!</p>
+                <button class="btn-primary" onclick="restartQuiz()">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
