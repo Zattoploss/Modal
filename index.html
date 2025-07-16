@@ -3,41 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stilo.css">
+    <title>Personality Assessment - Discover Your Traits</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Personality Assessment</h1>
+            <p>Discover your personality traits through 32 self-reflection questions</p>
+        </header>
 
-    <h1>Exemplo de Modal</h1>
-    <button id="abrir" onclick="abrirFechar()">Abrir</button>
-    <dialog id="modal">
-        <div class="modal-header">
-            <h2>Modal</h2>
+        <div id="quiz-container" class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <span class="progress-text" id="progress-text">Question 1 of 32</span>
+            </div>
+
+            <div class="question-container" id="question-container">
+                <h2 id="question-text"></h2>
+                <div class="options" id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                <button id="next-btn" class="btn-primary" onclick="nextQuestion()">Next Question</button>
+            </div>
         </div>
-        <div id="modal-body">
-            <form id="formulario" action="pagina_secundaria.html">
-                <h1>Nome:</h1>
-               <input type="text" id="Nome"  >
-               <h1>Endereço:</h1>
-               <input type="text" id="casa" oninput="Salvar()">
-               
-               <H1>CPF</H1>
-               <input id="cpf" type="text" oninput="CpfValidate()" maxlength="14">
-               <H1>TELEFONE:</H1>
-               <input type="text" id="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Telefone:" />
-               
-               <H1>CODIGO:</H1>
-               <input id="code" type="password" oninput="Salvar()">
-            </form>
-           <a href="segunda.html"><input type="submit" value="submit" onclick="mensage()"></a>
+
+        <div id="results-container" class="results-container hidden">
+            <div class="results-card">
+                <h2>Assessment Complete!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">pts</span>
+                    </div>
+                </div>
+                <p id="score-message"></p>
+                
+                <form id="results-form" class="results-form">
+                    <h3>Submit Your Results</h3>
+                    <div class="form-group">
+                        <label for="user-name">Full Name:</label>
+                        <input type="text" id="user-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email Address:</label>
+                        <input type="email" id="user-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-comments">Comments (Optional):</label>
+                        <textarea id="user-comments" name="comments" rows="3" placeholder="Any thoughts about this personality assessment?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Results</button>
+                    <button type="button" class="btn-secondary" onclick="restartQuiz()">Take Assessment Again</button>
+                </form>
+            </div>
         </div>
-       <a href="segunda.html"><button id="fechar" onclick="abrirFechar()">Fechar</button></a> 
-    </dialog>
 
-    
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Submitting your personality results...</p>
+        </div>
 
+        <div id="success-message" class="success-message hidden">
+            <div class="success-card">
+                <h2>✅ Success!</h2>
+                <p>Your personality assessment results have been submitted successfully!</p>
+                <button class="btn-primary" onclick="restartQuiz()">Take Assessment Again</button>
+            </div>
+        </div>
+    </div>
 
-
-    <script src="java.js" defer></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
