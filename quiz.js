@@ -1,170 +1,85 @@
-// Quiz Questions - 32 questions across various topics
+// Personality Quiz Questions - 32 questions about self-knowledge and personality traits
 const quizQuestions = [
     {
-        question: "What is the capital of France?",
-        options: ["London", "Berlin", "Paris", "Madrid"],
-        correct: 2
+        question: "1.	Eu gosto de ajudar outras pessoas a crescerem e superarem desafios.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Venus", "Mars", "Jupiter", "Saturn"],
-        correct: 1
+        question: "2.	Compartilhar meus aprendizados e experiências me parece algo empolgante.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the largest ocean on Earth?",
-        options: ["Atlantic", "Indian", "Arctic", "Pacific"],
-        correct: 3
+        question: "3.	Sinto que minha história ou jornada pode inspirar outras pessoas.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Who painted the Mona Lisa?",
-        options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
-        correct: 1
+        question: "4.	A ideia de ver alguém aplicar meu conhecimento para alcançar resultados me motiva.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the smallest unit of matter?",
-        options: ["Molecule", "Atom", "Electron", "Proton"],
-        correct: 1
+        question: "5.	A mentoria parece alinhada com o propósito de vida que busco.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "In what year did World War II end?",
-        options: ["1944", "1945", "1946", "1947"],
-        correct: 1
+        question: "6.	Eu tenho um conjunto de experiências ou conhecimentos que considero valiosos.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the chemical symbol for gold?",
-        options: ["Go", "Gd", "Au", "Ag"],
-        correct: 2
+        question: "7.	Sinto que já superei desafios importantes que me permitem orientar outras pessoas.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which continent is the largest by land area?",
-        options: ["Africa", "Asia", "North America", "Europe"],
-        correct: 1
+        question: "8.	Estou aberta a aprender enquanto ensino, vendo a mentoria como uma via de mão dupla.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the hardest natural substance on Earth?",
-        options: ["Steel", "Diamond", "Quartz", "Iron"],
-        correct: 1
+        question: "9.	Sinto confiança para assumir o papel de guiar alguém, mesmo com possíveis imperfeições.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Who wrote 'Romeo and Juliet'?",
-        options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-        correct: 1
+        question: "10.	Já recebi feedbacks de que sou boa em ouvir e dar conselhos práticos.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the largest mammal in the world?",
-        options: ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        correct: 1
+        question: "11.	Tenho energia e tempo disponíveis para dedicar à mentoria no meu momento atual.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "Which gas makes up most of Earth's atmosphere?",
-        options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        correct: 2
+        question: "12.	Minhas prioridades atuais permitem que eu me comprometa com outra pessoa.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the currency of Japan?",
-        options: ["Yuan", "Won", "Yen", "Rupee"],
-        correct: 2
+        question: '13.	Estou disposta a dizer "não" a algumas coisas para abrir espaço para a mentoria.',
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "How many continents are there?",
-        options: ["5", "6", "7", "8"],
-        correct: 2
+        question: "14.	Ser mentora se encaixa com meus planos de curto ou médio prazo.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     },
     {
-        question: "What is the fastest land animal?",
-        options: ["Lion", "Cheetah", "Leopard", "Tiger"],
-        correct: 1
-    },
-    {
-        question: "Which organ in the human body produces insulin?",
-        options: ["Liver", "Kidney", "Pancreas", "Heart"],
-        correct: 2
-    },
-    {
-        question: "What is the tallest mountain in the world?",
-        options: ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
-        correct: 1
-    },
-    {
-        question: "Which element has the chemical symbol 'O'?",
-        options: ["Osmium", "Oxygen", "Ozone", "Opium"],
-        correct: 1
-    },
-    {
-        question: "In which year was the first iPhone released?",
-        options: ["2006", "2007", "2008", "2009"],
-        correct: 1
-    },
-    {
-        question: "What is the longest river in the world?",
-        options: ["Amazon", "Nile", "Mississippi", "Yangtze"],
-        correct: 1
-    },
-    {
-        question: "How many bones are there in an adult human body?",
-        options: ["196", "206", "216", "226"],
-        correct: 1
-    },
-    {
-        question: "Which country gifted the Statue of Liberty to the United States?",
-        options: ["Britain", "Spain", "France", "Italy"],
-        correct: 2
-    },
-    {
-        question: "What is the main ingredient in guacamole?",
-        options: ["Tomato", "Avocado", "Pepper", "Onion"],
-        correct: 1
-    },
-    {
-        question: "Which planet is closest to the Sun?",
-        options: ["Venus", "Earth", "Mercury", "Mars"],
-        correct: 2
-    },
-    {
-        question: "What does 'WWW' stand for?",
-        options: ["World Wide Web", "World War Won", "World Wrestling Warriors", "Wide World Web"],
-        correct: 0
-    },
-    {
-        question: "Which blood type is known as the universal donor?",
-        options: ["A", "B", "AB", "O"],
-        correct: 3
-    },
-    {
-        question: "What is the capital of Australia?",
-        options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-        correct: 2
-    },
-    {
-        question: "How many sides does a hexagon have?",
-        options: ["5", "6", "7", "8"],
-        correct: 1
-    },
-    {
-        question: "Which scientist developed the theory of relativity?",
-        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
-        correct: 1
-    },
-    {
-        question: "What is the largest country in the world by land area?",
-        options: ["Canada", "China", "United States", "Russia"],
-        correct: 3
-    },
-    {
-        question: "Which vitamin is produced when skin is exposed to sunlight?",
-        options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        correct: 3
-    },
-    {
-        question: "What is the smallest country in the world?",
-        options: ["Monaco", "Nauru", "Vatican City", "San Marino"],
-        correct: 2
+        question: "15.	O impacto que desejo causar é maior do que o medo de começar.",
+        options: [" Concordo totalmente", " Concordo", " Neutra", "Discordo", "Discordo totalmente"],
+        points: [5, 4, 3, 2, 1]
     }
-];
+  ];
 
 // Quiz state
 let currentQuestion = 0;
-let score = 0;
+let totalPoints = 0;
 let userAnswers = [];
 let selectedAnswer = null;
 
@@ -185,7 +100,7 @@ const successMessage = document.getElementById('success-message');
 // Initialize quiz
 function initializeQuiz() {
     currentQuestion = 0;
-    score = 0;
+    totalPoints = 0;
     userAnswers = [];
     selectedAnswer = null;
     showQuestion();
@@ -208,7 +123,7 @@ function showQuestion() {
     });
     
     nextBtn.disabled = true;
-    nextBtn.textContent = currentQuestion === quizQuestions.length - 1 ? 'Finish Quiz' : 'Next Question';
+    nextBtn.textContent = currentQuestion === quizQuestions.length - 1 ? 'Finish Assessment' : 'Next Question';
 }
 
 // Handle answer selection
@@ -228,13 +143,18 @@ function selectAnswer(answerIndex, buttonElement) {
 function nextQuestion() {
     if (selectedAnswer === null) return;
     
-    // Store answer
-    userAnswers.push(selectedAnswer);
+    // Store answer and points
+    const question = quizQuestions[currentQuestion];
+    const pointsEarned = question.points[selectedAnswer];
     
-    // Check if answer is correct
-    if (selectedAnswer === quizQuestions[currentQuestion].correct) {
-        score++;
-    }
+    userAnswers.push({
+        questionIndex: currentQuestion,
+        selectedOption: selectedAnswer,
+        selectedText: question.options[selectedAnswer],
+        pointsEarned: pointsEarned
+    });
+    
+    totalPoints += pointsEarned;
     
     // Move to next question or finish
     currentQuestion++;
@@ -260,25 +180,24 @@ function finishQuiz() {
     quizContainer.classList.add('hidden');
     resultsContainer.classList.remove('hidden');
     
-    finalScore.textContent = score;
+    const maxPossiblePoints = quizQuestions.length * 5; // 32 questions × 5 points max
+    const averageScore = (totalPoints / maxPossiblePoints * 100).toFixed(1);
     
-    // Generate score message
-    const percentage = (score / quizQuestions.length) * 100;
+    finalScore.textContent = totalPoints;
+    
+    // Generate personality message based on total points
     let message = '';
     
-    if (percentage >= 90) {
-        message = "🎉 Excellent! You're a quiz master!";
-    } else if (percentage >= 80) {
-        message = "👏 Great job! Very impressive score!";
-    } else if (percentage >= 70) {
-        message = "👍 Good work! Solid performance!";
-    } else if (percentage >= 60) {
-        message = "📚 Not bad! Room for improvement.";
-    } else {
-        message = "💪 Keep learning! Practice makes perfect.";
+    if (totalPoints >= 45 ) { // 90% or higher (45-160 points)
+        message = "Você está pronta para começar sua jornada como mentora! Sua motivação, preparação e momento de vida mostram que a mentoria é uma escolha alinhada com seus valores e desejos. Hora de planejar suas próximas ações!";
+    } else if (totalPoints >= 30) { // (30-44 points)
+        message = "Você tem interesse e algum preparo para a mentoria, mas pode haver bloqueios ou desafios a serem trabalhados antes de se comprometer. Reflita sobre suas prioridades e desenvolva mais clareza sobre como começar.";
+    } else if (totalPoints >= 15) { // (15-29 points)
+        message = "Pode não ser o momento certo para você se tornar uma mentora. Avalie se há outros compromissos ou questões pessoais que precisam de atenção antes de investir energia nesse papel.";
+    } else { // (-15 de points)
+        message = "Talvez a mentoria não seja o caminho mais adequado para você neste momento, e tudo bem! Considere explorar outras formas de contribuir com o mundo ou focar no seu próprio desenvolvimento.";
     }
     
-    scoreMessage.textContent = message;
 }
 
 // Handle form submission
@@ -297,19 +216,18 @@ resultsForm.addEventListener('submit', async (e) => {
     // Prepare detailed results
     const detailedResults = quizQuestions.map((question, index) => {
         const userAnswer = userAnswers[index];
-        const correct = question.correct;
-        const isCorrect = userAnswer === correct;
         
         return {
             questionNumber: index + 1,
             question: question.question,
-            userAnswer: question.options[userAnswer],
-            correctAnswer: question.options[correct],
-            isCorrect: isCorrect
+            selectedAnswer: userAnswer.selectedText,
+            pointsEarned: userAnswer.pointsEarned,
+            maxPoints: 5
         };
     });
     
-    const percentage = Math.round((score / quizQuestions.length) * 100);
+    const maxPossiblePoints = quizQuestions.length * 5;
+    const percentage = ((totalPoints / maxPossiblePoints) * 100).toFixed(1);
     
     try {
         const response = await fetch('/submit-results', {
@@ -321,10 +239,12 @@ resultsForm.addEventListener('submit', async (e) => {
                 name: name,
                 email: email,
                 comments: comments,
-                score: score,
+                totalPoints: totalPoints,
+                maxPossiblePoints: maxPossiblePoints,
                 totalQuestions: quizQuestions.length,
                 percentage: percentage,
-                detailedResults: detailedResults
+                detailedResults: detailedResults,
+                assessmentType: 'personality'
             })
         });
         
